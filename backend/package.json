@@ -4,6 +4,7 @@
   "main": "server.ts",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "start": "tsx -r dotenv/config src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -19,7 +20,8 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.12.2",
     "multer": "^2.5.0",
-    "nodemailer": "^10.6.1"
+    "nodemailer": "^10.6.1",
+    "tsx": "^4.23.15"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
@@ -29,7 +31,6 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/multer": "^2.3.0",
     "@types/node": "^26.6.6",
-    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }
