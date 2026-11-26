@@ -1,0 +1,28 @@
+export const MESSAGES = {
+  USER_EXISTS: "User already exists",
+  USER_REGISTERED: "User registered successfully",
+  INVALID_CREDENTIALS: "Invalid credentials",
+  USER_NOT_FOUND: "User not found",
+  SENT_PASSWORD_RESET_LINK:
+    "Password reset link sent to your registered email address",
+  PASSWORD_RESET_SUCCESS: "Password reset successfully",
+  ACCESS_DENIED_NO_TOKEN: "Access denied, no token provided",
+  INVALID_OR_EXPIRED_TOKEN: "Invalid or expired token",
+  NO_IMAGES_UPLOADED: "No images uploaded",
+  IMAGE_NOT_FOUND_OR_UNAUTHORIZED: "Image not found or unauthorized",
+  IMAGE_DELETED_SUCCESS: "Image deleted successfully",
+  ORDER_UPDATED_SUCCESS: "Order updated successfully",
+  INTERNAL_SERVER_ERROR: "Interal sever error",
+  MONGODB_CONNECTED: "Connected to mongodb",
+  SERVER_RUNNING: "Server running on port",
+  OTP_SENT: "OTP sent successfully,please verify your email.",
+  TRY_LATER:
+    "We are experiencing technical difficulties, please try again later",
+  EMAIL_VERIFIED: "Email verified successfully. You can now login.",
+  EMAIL_ALREADY_VERIFIED: "Email already verified",
+  OTP_EXPIRED: "OTP has expired. Please request a new otp.",
+  INVALID_OTP: "Invalid OTP",
+  VERIFY_EMAIL_FIRST: "Please verify your email before login",
+  INVALID_OR_EXPIRED_LINK: "Invalid or expired password reset link",
+  IMAGE_NOT_FOUND: "Image not found",
+} as const;
