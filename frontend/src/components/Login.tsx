@@ -1,7 +1,7 @@
-import { useState, type FormEvent } from "react";
-import { useLogin } from "../hooks/useLogin";
+import { type FormEvent } from "react";
 import { toast } from "sonner";
 import { MESSAGES } from "../constants/messages";
+import { useLogin } from "../hooks/useLogin";
 
 interface LoginProps {
   setToken: (token: string) => void;

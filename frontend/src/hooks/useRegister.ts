@@ -1,7 +1,6 @@
+import axios from "axios";
 import { useState } from "react";
 import { API_ENDPOINTS } from "../constants/apiEndPoints";
-import axios from "axios";
-import { toast } from "sonner";
 
 export const useRegister = () => {
   const [email, setEmail] = useState<string>("");
