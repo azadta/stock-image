@@ -9,7 +9,7 @@ import { generateOtp, hashOtp } from "../utils/otp";
 import bcrypt from "bcryptjs";
 import { MESSAGES } from "../constants/messages";
 import { STATUS_CODES } from "../constants/statusCodes";
-import sendEmail from "../utils/sendEmail";
+import{ sendResendEmail} from "../utils/sendResendEmail";
 import {
   generateResetPasswordToken,
   hashResetToken,
@@ -54,7 +54,7 @@ export class AuthService implements IAuthService {
         <h1>${otp}</h1>
         <p>This OTP expires in 5 minutes.</p>
         <p>Please do not share this OTP with anyone</p>`;
-    await sendEmail({
+    await sendResendEmail({
       to: email,
       subject: `Stock Image- Email verification`,
       message,
@@ -116,7 +116,7 @@ export class AuthService implements IAuthService {
      <a href="${resetLink}">Reset Password</a>
      <p>This link expires in 15 minutes</p>
     `;
-    await sendEmail({
+    await sendResendEmail({
       to: user.email,
       subject: "Stock Image - Password Reset",
       message,
