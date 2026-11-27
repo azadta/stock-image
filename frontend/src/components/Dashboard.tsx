@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useDashboard } from "../hooks/useDashboard";
 
 interface DashboardProps {
