@@ -58,7 +58,7 @@ const Login = ({ setToken }: LoginProps) => {
           <button
             type="button"
             onClick={() => setIsForgotPassword(false)}
-            className="text-sm text-gray-600 p-2 hover:underline w-full text-center"
+            className="text-sm text-gray-600 p-2 hover:underline w-full text-center cursor-pointer"
           >
             Back to Login
           </button>
@@ -91,7 +91,7 @@ const Login = ({ setToken }: LoginProps) => {
           <button
             type="button"
             onClick={() => setIsForgotPassword(true)}
-            className="text-sm text-blue-600 p-2 hover:underline w-full text-center"
+            className="text-sm text-blue-600 p-2 hover:underline w-full text-center cursor-pointer"
           >
             Forgot Password
           </button>
